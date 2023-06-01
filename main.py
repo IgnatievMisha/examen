@@ -1,8 +1,12 @@
-a=input()
-b=a.split(" ")
-print(b)
-c=[]
-for i in b:
-    if int(i)%2==0:
-        c.append(i)
-print(c)
+dict={}
+lst=[]
+for i in range(3):
+    name=input()
+    mark=int(input())
+    dict[name]=mark
+    lst.append(dict[name])
+    lst.append(mark)
+    x=max(lst)
+for key, value in dict:
+    if value==x:
+        print(key)
