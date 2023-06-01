@@ -7,6 +7,7 @@ for i in range(3):
     lst.append(dict[name])
     lst.append(mark)
     x=max(lst)
+    print(dict)
 for key, value in dict:
     if value==x:
         print(key)
