@@ -1,5 +1,6 @@
-a=input()
-b=a.split(" ")
-for i in b:
-    if "Python" in i:
-        print(i)
+class Student:
+    def __init__(self, name, age):
+        self.name=name
+        self.age=age
+        print(name, age)
+Student("John", 22)
