@@ -1,3 +1,7 @@
 a=input()
-for i in range(len(a)):
-    print(a[i])
+def polindrome(a):
+    if a==a[::-1]:
+        print(True)
+    else:
+        print(False)
+polindrome(a)
