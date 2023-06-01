@@ -1,7 +1,8 @@
 a=input()
-def polindrome(a):
-    if a==a[::-1]:
-        print(True)
-    else:
-        print(False)
-polindrome(a)
+b=a.split(" ")
+print(b)
+c=[]
+for i in b:
+    if int(i)%2==0:
+        c.append(i)
+print(c)
