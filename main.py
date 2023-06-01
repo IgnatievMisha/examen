@@ -1,14 +1,8 @@
-class BankAccount:
-    def __init__(self, balance, account_number):
-        self.balance = balance
-        self.account_number = account_number
-    def deposit(self):
-        self.balance = self.balance + 100
-        print(self.balance)
-    def withdraw(self):
-        self.balance = self.balance - 100
-        if self.balance>0:
-            print(self.balance)
-bank=BankAccount(balance = 1000, account_number = 777)
-bank.deposit()
-bank.withdraw()
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+    def get_info(self):
+        print(f'title: {self.title}, author: {self.author}')
+Student = Book(title="blablabla", author="bububu")
+Student.get_info()
